@@ -57,7 +57,11 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 100%;
+}
 body{
+    font-size: 16px;
     font-family: "Roboto", var(--font-family-sans-serif);
 }
 .container{
@@ -140,4 +144,162 @@ body{
     background-color: #FFAF19;
     flex-shrink: 0;
     text-decoration: none;
+}
+.slide{
+    border-radius: 1.25rem;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    padding-left: 6.25rem;
+    position: relative;
+    overflow: hidden;
+}
+.slide-text-light{
+    background-color: grey;
+    color: #fff;
+}
+.slide-content{
+    max-width: 400px;
+    position: relative;
+}
+.slide-title{
+    margin-top: 0;
+    margin-bottom: .9375rem;
+    font-weight: bold;
+    font-size: 3.125rem;
+    line-height: 3.1875rem;
+}
+.slide-text{
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    margin-bottom: 1.875rem;
+}
+
+.button-primary{
+    background: #F47322;
+    color: #fff;
+}
+.button-default{
+    background-color: #fff;
+    color: #5F5F61;
+}
+.button{
+    border-radius: 1.5625rem;
+    padding: .75rem 3.125rem;
+    display: inline-block;
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.4375rem;
+}
+
+.slide-summer{
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
+   url("../img/summer.png") no-repeat center/cover; */
+    background-image: url("../img/summer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.slide-summer::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+.promo{
+   padding-top: 3.125rem;
+   padding-bottom: 3.125rem;
+   display: flex;
+   align-items: center;
+   column-gap: 3.125rem;
+}
+.card{
+    flex-grow: 1;
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    padding: 2rem;
+    max-width: 35.625rem;
+    min-height: 23.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.card-text-light{
+    color: #fff;
+}
+.card-header {
+}
+.card--title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4375rem;
+    margin-top: .25rem;
+    margin-bottom: 1.5625rem;
+}
+.card-description {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    max-width: 12.5rem;
+}
+.card-footer {
+}
+.card-price {
+    display: block;
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 1.4375rem;
+    margin-bottom: .5rem;
+}
+.card-price span{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.4375rem;
+}
+.card-delivery {
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    margin-bottom: 25px;
+}
+.card-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
+/* .sweet-basket{
+    background-image: url(../img/sweet-basket.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+.button {
+}
+.button-default {
 }
