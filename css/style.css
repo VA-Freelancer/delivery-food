@@ -184,17 +184,37 @@ body{
     background-color: #fff;
     color: #5F5F61;
 }
+
 .button{
     border-radius: 1.5625rem;
     padding: .75rem 3.125rem;
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
     
     font-weight: 500;
     font-size: .875rem;
     line-height: 1.4375rem;
 }
+.button-outline {
+    border: .125rem solid #F37321;
+    padding: .9375rem 1.5625rem;
+    color: #F37321;
+    background: transparent;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+}
 
+.button-center{
+    display: block;
+    margin: auto;
+}
+.button-category{
+    margin-top: 3.75rem;
+    min-width: 19.6875rem;
+    cursor: pointer
+}
 .slide-summer{
     /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
    url("../img/summer.png") no-repeat center/cover; */
@@ -220,8 +240,11 @@ body{
    display: flex;
    align-items: center;
    column-gap: 3.125rem;
+   justify-content: space-between;
 }
 .card{
+    width: 50px;
+    flex-basis: 50%;
     flex-grow: 1;
     position: relative;
     border-radius: 1.25rem;
@@ -302,4 +325,249 @@ body{
 .button {
 }
 .button-default {
+}
+.delivery-week{
+    padding: 6.25rem 0;
+}
+.section-title{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.4375rem;
+    margin-top: 0;
+    margin-bottom: 2.9375rem;
+}
+.delivery-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+}
+.delivery-card{
+    /* flex-grow: 1; */
+    position: relative;
+    width: 17.1875rem;
+    height: 11.375rem;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.delivery-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.delivery-tag{
+    padding: .3125rem .625rem;
+    top: 1rem;
+    left: .625rem;
+    position: absolute;
+    border-radius: 1.875rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+    color: #49494F;
+}
+.tag-healf{
+    background: #D0FD89;
+}
+.tag-vegetable{
+    background: #AEBC41;
+}
+.tag-meat{
+    background: #B86B78;
+}
+.tag-bird{
+    background: #D68334;
+}
+.tag-fish{
+    background: #CD6255;
+}
+.tag-baby{
+    background: #FFFDBF;
+}
+.tag-parent{
+    background: #F6FDC8;
+}
+.tag-holiday{
+    background: #FEF7FE;
+}
+.section-grey{
+    background: #F6F6F6;
+}
+.category{
+    padding-top: 2.5rem;
+    padding-bottom: 3.75rem;
+}
+
+.container {
+}
+.section-title {
+}
+.tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 58px;
+    margin-bottom: 3.875rem;
+}
+.tabs-item {
+}
+
+.tabs-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+
+    color: #49494F;
+}
+.tabs-link.active{
+    color: #F37321;
+}
+.tabs-content {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    flex-wrap: wrap;
+}
+.tabs-card {
+    flex-grow: 1;
+    flex-basis: 25%;
+    max-width: 16.875rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background:#fff;
+    box-shadow: 0px .25rem 2.5rem rgba(0, 0, 0, 0.1);
+}
+.tabs-card-content{
+    padding: 1.4375rem;
+}
+.tabs-image{
+    max-width: 100%;
+}
+.tabs-title {
+    margin-top: 0;
+    margin-bottom: .8125rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+    color: #000000;
+}
+.tabs-description {
+    margin-bottom: 2.1875rem;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.4375rem;
+    color: #B9B9BE;
+}
+.tabs-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tabs-good {
+}
+.tabs-price {
+    display: block;
+    font-weight: 500;
+    font-size: 1.4375rem;
+    line-height: 1.4375rem;
+    color: #4B4B51;
+    margin-bottom: 5px;
+}
+.tabs-weight {
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 1.25rem;
+    color: #AAAAB1;
+}
+footer{
+    padding: 2.5rem 0;
+    background: #F6F6F6;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    margin-right: 3.125rem;
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+    column-gap: 3.125rem;
+}
+.footer-link{
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    color: #000000;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+    margin-left: auto;
+}
+.social-link{
+
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+.advantage{
+    padding-top: 6.25rem;
+    padding-bottom: 200px;
+}
+.advantage-cards {
+    display: flex;
+    align-items: center;
+    gap: 2.3125rem;
+}
+.advantage-card {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 16.875rem;
+    min-height: 18.5rem;
+    overflow: hidden;
+    box-shadow: 0px .25rem 2.5rem rgba(0, 0, 0, 0.1);
+    padding-top: 1.875rem;
+    padding-bottom: 1.5625rem;
+    border-radius: 18px;
+
+}
+.advantage-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 2.125rem;
+
+}
+.advantage-card-content {
+    padding: 0 24px;
+}
+.advantage-title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: .8125rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    color: #000000;
+    max-width: 9.875rem;
+}
+.advantage-description {
+    text-align: center;
+    font-weight: normal;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    color: #49494F;
+    margin: 0;
 }
