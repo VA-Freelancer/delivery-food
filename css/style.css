@@ -162,6 +162,22 @@ body{
     max-width: 400px;
     position: relative;
 }
+.slider-buttons{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.875rem;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 6.25rem;
+    justify-content: space-between;
+}
+.slider-button{
+    cursor: pointer;
+}
+.swiper{
+    position: relative;
+}
 .slide-title{
     margin-top: 0;
     margin-bottom: .9375rem;
@@ -213,14 +229,41 @@ body{
 .button-category{
     margin-top: 3.75rem;
     min-width: 19.6875rem;
-    cursor: pointer
+    cursor: pointer;
+}
+.button-default:hover{
+    border: .125rem solid #5F5F61;
+    padding: calc(.75rem - .125rem) calc(3.125rem - .125rem) ;
+    /* transition: all .25s ease; */
+}
+.button-outline:hover{
+ transition: all .25s ease;
+ background: #FFA871;
+ color: #fff;
+ border-color: transparent;
 }
 .slide-summer{
-    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
-   url("../img/summer.png") no-repeat center/cover; */
-    background-image: url("../img/summer.png");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
+   url("../img/summer.png") no-repeat center/cover;
+    /* background-image: url("../img/summer.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    
+}
+.slide-summer-two{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
+   url("../img/summer-2.png") no-repeat center/cover;
+    /* background-image: url("../img/summer-2.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+}
+.slide-vitamin{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%),
+   url("../img/vitamin.png") no-repeat center/cover;
+    /* background-image: url("../img/vitamin.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
     
 }
 .slide-summer::before{
@@ -426,7 +469,7 @@ body{
 .tabs-content {
     display: flex;
     align-items: center;
-    gap: 37px;
+    gap: 2.3125rem;
     flex-wrap: wrap;
 }
 .tabs-card {
@@ -543,6 +586,7 @@ footer{
     border-radius: 18px;
 
 }
+
 .advantage-image {
     width: 60px;
     height: 60px;
@@ -570,4 +614,147 @@ footer{
     line-height: 1.375rem;
     color: #49494F;
     margin: 0;
+}
+.advantage-card:hover{
+    background: #F37321;
+    color: #fff;
+    transition: all .25s ease;
+}
+.advantage-card:hover svg path{
+    fill: #fff;
+}
+.advantage-card:hover .advantage-title{
+    color: #fff;
+
+}
+.advantage-card:hover .advantage-description{
+    color: #fff;
+
+}
+.swiper-button-prev{
+    padding: 8px;
+    max-width: 2.5rem;
+    font-size: 1.5rem;
+}
+@media (max-width: 1260px){
+    .container{
+        max-width: 60rem;
+    }
+    .search-form{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    .tabs-card{
+        flex: 50%;
+        max-width: calc(50% - 2.3125rem);
+    }
+    .advantage-cards{
+        flex-wrap: wrap;
+    }
+    .advantage-card{
+        width: calc(50% - 2.3125rem);
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 47.5rem;
+    }
+    .slide{
+        padding: 4.375rem;
+    }
+    .delivery-card{
+        width: calc(50% - 1.875rem);
+    }
+    .footer-logo{
+        margin-right: 2.5rem;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 34.375rem;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .auth{
+        margin-left: 1.875rem;
+    }
+    .logo{
+        margin-right: auto;
+    }
+    .search-form{
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: .9375rem;
+        margin-top: .9375rem;
+    }
+    .promo{
+        flex-wrap: wrap;
+        row-gap: 3.125rem;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 90%;
+    }
+    .slide{
+        padding: .9375rem;
+        padding-bottom:  4.375rem;
+    }
+    .slider-buttons{
+        bottom: .9375rem;
+    }
+    .delivery-card{
+        width: 100%;
+    }
+    .tabs{
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+        gap: .625rem;
+    }
+    .tabs-card{
+        flex:   100%;
+        max-width: 100%;
+    }
+    .auth{
+        margin-left: .9375rem;
+    }
+    .shoping-cart{
+        margin-left: .9375rem;
+    }
+    .advantage-card{
+        width: 100%;
+    }
+}
+@media (max-width: 340px){
+    .auth{
+        margin-left: auto;
+    }
+    .shoping-cart{
+        margin-left: auto;
+    }
+    .search-form{
+    }
+    .logo{
+        margin-right: .3125rem;
+    }
+}
+@media (max-width: 284px){
+    .auth{
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .shoping-cart{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .search-form{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
